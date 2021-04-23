@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "font-awesome/css/font-awesome.min.css";
+
 import NavBar from "./components/navBar";
 import Footer from './components/footer';
-import QuantityPicker from './components/quantityPicker';
+import Product from './components/product';
 
 class App extends Component {
   render() {
@@ -11,8 +14,12 @@ class App extends Component {
         <NavBar></NavBar>
         <h1>Hello React World!</h1>
 
-        <QuantityPicker></QuantityPicker>
-
+        <Product></Product>
+        <Product></Product>
+        <Product></Product>
+        <Product></Product>
+        <Product></Product>
+        <Product></Product>
 
         <Footer></Footer>
       </div>
