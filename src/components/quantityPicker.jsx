@@ -5,7 +5,7 @@ import "./quantityPicker.css";
 class QuantityPicker extends Component {
   state = {
     quantity: 1,
-    name: "Johnny",
+    buttonLabel: "Add to cart"
   };
   render() {
     return (
@@ -26,7 +26,8 @@ class QuantityPicker extends Component {
           +
         </button>
 
-        {this.state.name}
+        {this.state.buttonLabel}
+        <button className="btn btn-sm btn-primary"><i className="fa fa-cart-plus" aria-hidden="true"></i></button>
       </div>
     );
   }

@@ -28,9 +28,6 @@ class NavBar extends Component {
           <li><a className="dropdown-item" href="/#">Something else here</a></li>
         </ul>
       </li>
-      <li className="nav-item">
-        <a className="nav-link disabled" href="/#" aria-disabled="true">Link</a>
-      </li>
     </ul>
     <form className="d-flex">
       <input className="form-control mr-2" type="search" placeholder="Search" aria-label="Search" />

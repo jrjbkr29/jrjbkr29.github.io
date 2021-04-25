@@ -1,6 +1,12 @@
 
 
 .qp-page button {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: auto;
+}
+
+.btn-info {
+    color: white;
+    background-color: rgb(180, 175, 175);
 }
