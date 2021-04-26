@@ -27,7 +27,7 @@ class QuantityPicker extends Component {
         </button>
 
         {this.state.buttonLabel}
-        <button className="btn btn-sm btn-primary"><i className="fa fa-cart-plus" aria-hidden="true"></i></button>
+        <button className="cartButton"><i className="fa fa-cart-plus" aria-hidden="true"></i></button>
       </div>
     );
   }

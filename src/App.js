@@ -5,26 +5,14 @@ import "font-awesome/css/font-awesome.min.css";
 
 import NavBar from "./components/navBar";
 import Footer from "./components/footer";
-import Product from "./components/product";
+import Catalog from './components/catalog';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <NavBar></NavBar>
-        <h1>Organika</h1>
-        <div className="products">
-          <Product></Product>
-          <Product></Product>
-          <Product></Product>
-          <Product></Product>
-          <Product></Product>
-          <Product></Product>
-          <Product></Product>
-          <Product></Product>
-          <Product></Product>
-          <Product></Product>
-        </div>
+       <Catalog></Catalog>
         <Footer></Footer>
       </div>
     );

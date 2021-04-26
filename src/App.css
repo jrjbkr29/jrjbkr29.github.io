@@ -23,15 +23,24 @@
 }
 
 .products {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  column-gap: 25px;
-  row-gap: 25px;
-  justify-items: center;
-  align-self: center;
-  width: auto;
+  width: 90%;
+  text-align: center;
 
   margin-bottom: 25px;
+}
+
+@media only screen and (min-device-width: 768px) {
+  .products {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 25px;
+    row-gap: 25px;
+    justify-items: center;
+    align-self: center;
+    width: auto;
+  
+    margin-bottom: 25px;
+  }
 }
 
 @keyframes App-logo-spin {

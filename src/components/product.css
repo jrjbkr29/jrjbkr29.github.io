@@ -1,17 +1,22 @@
 .product {
+    background-color: white;
+    box-shadow: -1px 2px 2px 2px #b8b8b8;
+}
+
+@media only screen and (min-device-width: 768px){
+
+.product {
     width: 250px;
     height: 350px;
     resize: both;
     overflow: none;
     border: 1px solid #e9e9e9;
-    background-color: rgb(204, 204, 204);
+    background-color: #fafafa;
     border-radius: 6px;
     padding: 10px;
     box-shadow: -1px 2px 2px 2px #b8b8b8;
-
-
 }
-
+}
 .product:hover {
     border-color: #aaaaaa;
     box-shadow: -1px 2px 5px 0px #779db3;
