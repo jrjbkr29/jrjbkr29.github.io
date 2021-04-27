@@ -11,7 +11,7 @@ class QuantityPicker extends Component {
     return (
       <div className="qp-page">
         <div>
-        <label>Total: ${this.state.quantity * this.props.price}</label>
+        <label>Total: ${(this.state.quantity * this.props.price).toFixed(2)}</label>
         </div>
         <button
           id="decrementButton"
