@@ -5,17 +5,17 @@ import ProductService from '../services/productService';
 class Catalog extends Component {
     state = {
         catalog: []
-      }
-    render() { 
-        return (  
+    }
+    render() {
+        return (
             <div className="catalog-page">
-        <h1>Our Catalog</h1>
+                <h1>Our Catalog</h1>
 
-        <p>The are {this.state.catalog.length} products in the catalog.</p>
+                <p>The are {this.state.catalog.length} products in the catalog.</p>
 
-        <div className="products">
-         {this.state.catalog.map((item) => <Product key={item.id} data={item}></Product>)}
-        </div>
+                <div className="products">
+                    {this.state.catalog.map((item) => <Product key={item.id} data={item}></Product>)}
+                </div>
             </div>
         );
     }
@@ -24,8 +24,8 @@ class Catalog extends Component {
         // get data from the service
         var service = new ProductService();
         var catalog = service.getCatalog();
-        this.setState({ catalog: catalog});
+        this.setState({ catalog: catalog });
     }
 }
- 
+
 export default Catalog;

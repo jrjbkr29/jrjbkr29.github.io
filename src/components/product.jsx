@@ -3,19 +3,18 @@ import QuantityPicker from "./quantityPicker";
 import "./product.css"
 
 class Product extends Component {
-  state = {  };
+  state = {
+    price: this.props.data.price
+  };
   render() {
-    
+
     return (
       <div className="product">
-          
+        <label className="titleLabel">{this.props.data.title}</label>
         <img className="productImage" src={"/Images/products/" + this.props.data.image} alt="product" />
-        <h6 className="title">{this.props.title}</h6>
-        <label>${this.props.data.price}</label>
-        <label>Total: $Product SubTotal</label>
-        <QuantityPicker></QuantityPicker>
 
-        
+        <label>Each: ${this.props.data.price}</label>
+        <QuantityPicker price={this.props.data.price}></QuantityPicker>
       </div>
     );
   }

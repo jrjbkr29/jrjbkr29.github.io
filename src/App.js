@@ -17,19 +17,6 @@ class App extends Component {
       </div>
     );
   }
-
-  increase = () => {
-    console.log("Increase!!");
-    this.setState({ quantity: this.state.quantity + 1 });
-  };
-
-  decrease = () => {
-    console.log("Decrease!!");
-    if (this.state.quantity > 1) {
-      this.setState({ quantity: this.state.quantity - 1 });
-    }
-  };
-
 }
 
 export default App;

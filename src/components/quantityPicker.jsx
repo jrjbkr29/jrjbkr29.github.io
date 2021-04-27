@@ -10,6 +10,9 @@ class QuantityPicker extends Component {
   render() {
     return (
       <div className="qp-page">
+        <div>
+        <label>Total: ${this.state.quantity * this.props.price}</label>
+        </div>
         <button
           id="decrementButton"
           className="btn btn-sm btn-info"

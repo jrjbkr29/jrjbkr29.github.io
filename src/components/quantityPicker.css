@@ -1,9 +1,10 @@
-
 .qp-page {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
     text-align: center;
 }
+
 .qp-page button {
     margin-right: 5px;
     margin-left: 5px;
@@ -20,7 +21,17 @@
 
 .fa-cart-plus {
     width: 25px;
-    height: 25px;
+    height: 20px;
+}
+
+#decrementButton {
+    font-size: 24px;
+    margin-left: 0px;
+}
+
+#incrementButton {
+    font-size: 24px;
+    margin-left: 0px;
 }
 
 .cartButton {
@@ -34,12 +45,20 @@
         margin-left: 5px;
         width: auto;
     }
-    
+
     .btn-info {
         color: rgb(0, 0, 0);
         background-color: rgb(255, 255, 255);
         border-color: black;
         height: 30px;
     }
-    
+
+    #decrementButton {
+        font-size: 14px;
+    }
+
+    #incrementButton {
+        font-size: 14px;
+        margin-left: 5px;
+    }
 }
