@@ -4,7 +4,7 @@ import "./quantityPicker.css";
 
 class QuantityPicker extends Component {
   state = {
-    quantity: 1,
+    quantity: this.props.minimum,
     buttonLabel: "Add to cart"
   };
   render() {
@@ -17,6 +17,7 @@ class QuantityPicker extends Component {
           id="decrementButton"
           className="btn btn-sm btn-info"
           onClick={this.decrease}
+          disabled={this.state.quantity === this.props.minimum}
         >
           -
         </button>
@@ -36,13 +37,15 @@ class QuantityPicker extends Component {
   }
 
   increase = () => {
+    var newQnty = (this.state.quantity + 1);
     console.log("Increase!!");
-    this.setState({ quantity: this.state.quantity + 1 });
+    this.setState({ quantity: newQnty});
+    this.props.onValueChange(newQnty);
   };
 
   decrease = () => {
     console.log("Decrease!!");
-    if (this.state.quantity > 1) {
+    if (this.state.quantity > this.props.minimum) {
       this.setState({ quantity: this.state.quantity - 1 });
     }
   };
